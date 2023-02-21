@@ -26,6 +26,8 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: npm ci
+      - name: checking the code
+        run: npm run lint
       - name: Build project
         run: npm run build
       - name: Deploy 
